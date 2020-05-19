@@ -2,7 +2,7 @@
 gcloud auth login
 export AUTH_TOKEN=$(gcloud auth print-access-token)
 export LOCATION=us-west1
-export INSTANCE_ID=bajram-test-cdf
+export INSTANCE_ID=bajram
 export CDAP_ENDPOINT=$(gcloud beta data-fusion instances describe \
     --location=${LOCATION} \
     --format="value(apiEndpoint)" \
